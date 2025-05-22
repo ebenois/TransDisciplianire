@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="../image/logoc.png">
+        <link rel="icon" type="image/x-icon" href="../image/logoc.ico">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,12 +41,24 @@
         </div>
 
         <footer>
-            <div class="bg-black ">
-                <div class=" flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25">
-                    <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
-                    <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
+            <div class="flex justify-between items-center bg-black text-white py-2 px-5">
+                <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Crédits média : 
+                    <br/>
+                    Dassault Mirage 2000-5F (47/102-EP) - Armée de l'Air<br>
+                    © Stéphane Pichard utilisée sous licence 
+                    <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
+                    Des modifications ont été apportées.
+                </p>
+                <div class="items-center">
+                    <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+                        <div class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                            <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
+                            <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
+                        </div>
+                        <p class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">© 2025 COG'AIR SHOW – Tous droits réservés</p>
+                    </div>
                 </div>
-                <p class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25 ">© 2025 COG'AIR SHOW – Tous droits réservés</p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
