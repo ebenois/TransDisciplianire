@@ -1,84 +1,117 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="../image/logoc.ico">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <title>Plan vert | COG'AIR SHOW</title>
-    </head>
 
-    <body class="bg-zinc-800">
-        <div class="bg-black">
-            <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-                <a class="flex items-center w-fit" href="../index.php">
-                    <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
-                    <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
-                </a>
-            </div>
-        </div>
-        <div class="font-mono bg-zinc-900 text-xs sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-            <a class="hover:text-zinc-400 text-white" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/equipe.html"><b>ÉQUIPE</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/video.html"><b>VIDEOS</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/bilan.html"><b>BILAN</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/planVert.html"><b>PLAN VERT</b></a>
-        </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../image/logoc.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>Plan vert | COG'AIR SHOW</title>
+</head>
 
+<body class="bg-zinc-800">
+    <header role="banner" class="bg-black">
+        <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+            <a aria-label="Retour à l'acceuil" class="flex items-center w-fit" href="../index.php">
+                <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                    alt="Logo du projet COG'AIR SHOW">
+                <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                    alt="Titre du projet COG'AIR SHOW">
+            </a>
+        </div>
+    </header>
+    <nav aria-label="Menu principal"
+        class="font-mono bg-zinc-900 text-[10px] sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'présentation'" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'équipe'" href="../page/equipe.html"><b>ÉQUIPE</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'déroulement'" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'manuel'" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'vidéos'" href="../page/video.html"><b>VIDEOS</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'bilan'" href="../page/bilan.html"><b>BILAN</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'plan vert'" href="../page/planVert.html"><b>PLAN VERT</b></a>
+    </nav>
+    <main role="main">
         <div class="relative w-full">
-            <img class="w-full h-auto" src="../image/planVert.png">
+            <img class="w-full h-auto" alt="La planète Terre" src="../image/planVert.png">
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center">
-                    <h1 class="font-mono uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap text-white"><b>Plan vert</b></h1>
+                    <h1
+                        class="font-mono uppercase text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap text-white">
+                        <b>Plan vert</b>
+                    </h1>
                 </div>
             </div>
         </div>
-        
-        <p class="px-10 font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white pt-10 xl:pt-30 pb-10">
-            Conformément aux exigences du Plan Vert et aux engagements DD&RSE (Développement Durable et Responsabilité Sociétale des Entreprises), le projet <span class="italic">COG’AIR SHOW</span> intègre plusieurs dimensions de durabilité, d’éthique et d’inclusivité.
-            <br/><br/>
-            <span class="underline">Éco-conception et sobriété numérique :</span>
-            <br/>
-            - Le livrable principal, un manuel de pilotage, a été conçu en version numérique uniquement, limitant l’usage du papier et facilitant sa diffusion.
-            <br/>
-            - Le recours à un simulateur statique permet de s’entraîner sans émission de CO₂, à l’inverse d’un avion réel, contribuant ainsi à une approche pédagogique plus respectueuse de l’environnement.
-            <br/><br/>
-            <span class="underline">Responsabilité sociale :</span>
-            <br/>
-            - L’équipe projet a fonctionné sur un principe d’égalité des rôles et d’inclusion, en valorisant les compétences variées des membres, qu’ils aient ou non une connaissance préalable de l’aéronautique.
-            <br/>
-            - Un effort particulier a été mené pour rendre la documentation accessible, claire et réutilisable par de futurs étudiants, quels que soient leurs parcours ou leurs besoins spécifiques.
-            <br/><br/>
-            <span class="underline">Sécurité et prévention :</span>
-            <br/>
-            - Le simulateur ayant des composantes matérielles complexes, les tests ont été réalisés avec prudence, en lien avec des référents techniques pour éviter tout risque d’usage inapproprié ou dangereux.
-            <br/><br/>
-            À travers ces choix, notre projet s’inscrit dans une logique de transition environnementale et de responsabilité sociétale, en accord avec les principes du Plan Vert issus de la loi Grenelle.
-        </p>
-        
-        <footer>
-            <div class="flex justify-between items-center bg-black text-white py-2 px-5">
-                <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                    Crédits média : <br>
-                    utilisée sous licence 
-                    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" class="underline">CC0 1.0</a>
-                </p>
-                <div class="items-center">
-                    <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-                        <div class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
-                            <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
-                            <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
-                        </div>
-                        <p class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">© 2025 COG'AIR SHOW – Tous droits réservés</p>
+        <div
+            class="px-5 xl:px-10 font-mono text-sm sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white pt-10 xl:pt-30 pb-10">
+            <p>
+                Conformément aux exigences du Plan Vert et aux engagements DD&RSE (Développement Durable et
+                Responsabilité
+                Sociétale des Entreprises), le projet <span class="italic">COG’AIR SHOW</span> intègre plusieurs
+                dimensions
+                de durabilité, d’éthique et d’inclusivité.
+            </p>
+
+            <h2 class="underline mt-6">Éco-conception et sobriété numérique</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Le livrable principal, un manuel de pilotage, a été conçu en version numérique uniquement, limitant
+                    l’usage du papier et facilitant sa diffusion.</li>
+                <li>Le recours à un simulateur statique permet de s’entraîner sans émission de CO₂, à l’inverse d’un
+                    avion réel, contribuant ainsi à une approche pédagogique plus respectueuse de l’environnement.</li>
+            </ul>
+
+            <h2 class="underline mt-6">Responsabilité sociale</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>L’équipe projet a fonctionné sur un principe d’égalité des rôles et d’inclusion, en valorisant les
+                    compétences variées des membres, qu’ils aient ou non une connaissance préalable de l’aéronautique.
+                </li>
+                <li>Un effort particulier a été mené pour rendre la documentation accessible, claire et réutilisable par
+                    de futurs étudiants, quels que soient leurs parcours ou leurs besoins spécifiques.</li>
+            </ul>
+
+            <h2 class="underline mt-6">Sécurité et prévention</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Le simulateur ayant des composantes matérielles complexes, les tests ont été réalisés avec prudence,
+                    en lien avec des référents techniques pour éviter tout risque d’usage inapproprié ou dangereux.</li>
+            </ul>
+
+            <p class="mt-6">
+                À travers ces choix, notre projet s’inscrit dans une logique de transition environnementale et de
+                responsabilité sociétale, en accord avec les principes du Plan Vert issus de la loi Grenelle.
+            </p>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <div class="xl:flex justify-between items-center bg-black text-white py-2 px-5">
+            <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                Crédits média : <br>
+                utilisée sous licence
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" class="underline">CC0 1.0</a>
+            </p>
+            <div class="items-center">
+                <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+                    <div
+                        class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                            alt="Logo du projet COG'AIR SHOW">
+                        <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                            alt="Titre du projet COG'AIR SHOW">
                     </div>
+                    <p
+                        class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        © 2025 COG'AIR SHOW – Tous droits réservés</p>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

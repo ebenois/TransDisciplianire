@@ -1,85 +1,120 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="../image/logoc.ico">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <title>Présentation | COG'AIR SHOW</title>
-    </head>
 
-    <body class="bg-zinc-800">
-        <div class="bg-black">
-            <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-                <a class="flex items-center w-fit" href="../index.php">
-                    <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
-                    <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
-                </a>
-            </div>
-        </div>
-        <div class="font-mono bg-zinc-900 text-xs sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-            <a class="hover:text-zinc-400 text-white" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/equipe.html"><b>ÉQUIPE</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/video.html"><b>VIDEOS</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/bilan.html"><b>BILAN</b></a>
-            <a class="hover:text-zinc-400 text-white" href="../page/planVert.html"><b>PLAN VERT</b></a>
-        </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../image/logoc.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>Présentation | COG'AIR SHOW</title>
+</head>
 
+<body class="bg-zinc-800">
+    <header role="banner" class="bg-black">
+        <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+            <a aria-label="Retour à l'acceuil" class="flex items-center w-fit" href="../index.php">
+                <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                    alt="Logo du projet COG'AIR SHOW">
+                <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                    alt="Titre du projet COG'AIR SHOW">
+            </a>
+        </div>
+    </header>
+    <nav aria-label="Menu principal"
+        class="font-mono bg-zinc-900 text-[10px] sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'présentation'" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'équipe'" href="../page/equipe.html"><b>ÉQUIPE</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'déroulement'" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'manuel'" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'vidéos'" href="../page/video.html"><b>VIDEOS</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'bilan'" href="../page/bilan.html"><b>BILAN</b></a>
+        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'plan vert'" href="../page/planVert.html"><b>PLAN VERT</b></a>
+    </nav>
+    <main role="main">
         <div class="relative w-full">
-            <img class="w-full h-auto" src="../image/presentation.png">
+            <img class="w-full h-auto"
+                alt="Pilotes de Mirage 2000 au camp Kosseï, poste de commandement de la force Barkhane"
+                src="../image/presentation.png">
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center">
-                    <h1 class="font-mono uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-nowrap text-white"><b>Présentation du projet</b></h1>
+                    <h1
+                        class="font-mono uppercase text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-nowrap text-white">
+                        <b>Présentation du projet</b>
+                    </h1>
                 </div>
             </div>
         </div>
-        
-        <p class="px-10 font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:lg:text-xl text-white pt-10 xl:pt-30 pb-10">
-            <span class="font-bold">Le projet COG’AIR SHOW</span>, mené dans le cadre de la première année à l’ENSC, a pour objectif d'enseigner l’utilisation d’un simulateur de <span class="font-semibold">Mirage 2000</span>. Ce simulateur statique de haute fidélité reproduit de manière réaliste le fonctionnement de l’avion d’origine, nécessitant ainsi une approche approfondie à la fois <span class="italic">aéronautique</span> et <span class="italic">technologique</span>.
-            <br/><br/>
-            Encadré par <span class="font-bold">M. Wissam Sofiane</span>, ce projet transdisciplinaire mobilise des compétences en <span class="italic">informatique</span>, <span class="italic">gestion des connaissances</span> et <span class="italic">aéronautique</span>. Il vise à former une équipe capable de comprendre et d’exploiter le simulateur, tout en apportant des <span class="font-semibold">améliorations documentaires</span> et <span class="font-semibold">techniques</span>.
-            <br/><br/>
-            <span class="underline font-semibold">Les objectifs principaux sont :</span>
-            <br/>
-            - Prendre en main et améliorer la documentation existante du simulateur.<br/>
-            - Vérifier le bon fonctionnement matériel et logiciel de l’ensemble du système.<br/>
-            - Se familiariser avec le pilotage d’un avion d’arme, la gestion des systèmes de navigation et les outils de simulation.<br/>
-            - Réaliser une démonstration complète de l’utilisation du simulateur.<br/>
-            - Réaliser un <span class="font-semibold">manuel de pilotage clair et accessible</span> pour faciliter l’apprentissage et l’autonomie des futurs utilisateurs.
-            <br/><br/>
-            Le projet intègre l’utilisation du logiciel de simulation <span class="font-semibold">DCS</span> ainsi que du simulateur de <span class="font-semibold">la Forge</span>. Des <span class="italic">étudiants experts</span> du simulateur accompagneront l’équipe pour approfondir les aspects techniques complexes.
-            <br/><br/>
-            Ce travail permettra aux participants de développer des <span class="font-semibold">compétences à la fois théoriques et pratiques</span>, et de contribuer au <span class="italic">transfert de connaissances</span> dans un environnement de simulation aéronautique exigeant.
-        </p>
-        
-        
-
-        <footer>
-            <div class="flex justify-between items-center bg-black text-white py-2 px-5">
-                <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                    Crédits média : 
-                    <br/>
-                    Pilotes de Mirage 2000 au camp Kosseï, poste de commandement de la force Barkhane<br>
-                    <a href="https://imagesdefense.gouv.fr/fr/author/index/index/id/1503174/" class="underline">© Richard Nicolas-Nelson</a> utilisée sous licence 
-                    <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
-                    Des modifications ont été apportées.
-                </p>
-                <div class="items-center">
-                    <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-                        <div class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
-                            <img src="../image/logon.png"  class="h-4 sm:h-8 md:h-10 lg:h-14 xl:h-18" alt="logo">
-                            <img src="../image/titre.png"  class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8" alt="nom_du_projet">  
-                        </div>
-                        <p class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">© 2025 COG'AIR SHOW – Tous droits réservés</p>
+        <div
+            class="px-5 xl:px-10 font-mono text-sm sm:text-sm md:text-base lg:text-lg xl:lg:text-xl text-white pt-10 xl:pt-30 pb-10">
+            <p>
+                <strong>Le projet COG’AIR SHOW</strong>, mené dans le cadre de la première année à l’ENSC, a pour
+                objectif d'enseigner l’utilisation d’un simulateur de <strong>Mirage 2000</strong>. Ce simulateur
+                statique de haute fidélité reproduit de manière réaliste le fonctionnement de l’avion d’origine,
+                nécessitant ainsi une approche approfondie à la fois <em>aéronautique</em> et <em>technologique</em>.
+            </p>
+            <p class="mt-6">
+                Encadré par <strong>M. Wissam Sofiane</strong>, ce projet transdisciplinaire mobilise des compétences en
+                <em>informatique</em>, <em>gestion des connaissances</em> et <em>aéronautique</em>. Il vise à former une
+                équipe capable de comprendre et d’exploiter le simulateur, tout en apportant des <strong>améliorations
+                    documentaires</strong> et <strong>techniques</strong>.
+            </p>
+            <h2 class="underline mt-6">Les objectifs principaux sont :</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Prendre en main et améliorer la documentation existante du simulateur.</li>
+                <li>Vérifier le bon fonctionnement matériel et logiciel de l’ensemble du système.</li>
+                <li>Se familiariser avec le pilotage d’un avion d’arme, la gestion des systèmes de navigation et les
+                    outils de simulation.</li>
+                <li>Réaliser une démonstration complète de l’utilisation du simulateur.</li>
+                <li>Réaliser un <strong>manuel de pilotage clair et accessible</strong> pour faciliter l’apprentissage
+                    et l’autonomie des futurs utilisateurs.</li>
+            </ul>
+            <p class="mt-6">
+                Le projet intègre l’utilisation du logiciel de simulation <strong>DCS</strong> ainsi que du simulateur
+                de <strong>la Forge</strong>. Des <em>étudiants experts</em> du simulateur accompagneront l’équipe pour
+                approfondir les aspects techniques complexes.
+            </p>
+            <p class="mt-6">
+                Ce travail permettra aux participants de développer des <strong>compétences à la fois théoriques et
+                    pratiques</strong>, et de contribuer au <em>transfert de connaissances</em> dans un environnement de
+                simulation aéronautique exigeant.
+            </p>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <div class="xl:flex justify-between items-center bg-black text-white py-2 px-5">
+            <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                Crédits média :
+                <br />
+                Pilotes de Mirage 2000 au camp Kosseï, poste de commandement de la force Barkhane<br>
+                <a href="https://imagesdefense.gouv.fr/fr/author/index/index/id/1503174/" class="underline">© Richard
+                    Nicolas-Nelson</a> utilisée sous licence
+                <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
+                Des modifications ont été apportées.
+            </p>
+            <div class="items-center">
+                <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+                    <div
+                        class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                            alt="Logo du projet COG'AIR SHOW">
+                        <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                            alt="Titre du projet COG'AIR SHOW">
                     </div>
+                    <p
+                        class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        © 2025 COG'AIR SHOW – Tous droits réservés</p>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
