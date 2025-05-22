@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>Accueil | COG'AIR SHOW</title>
+    <style>
+        :focus {
+            outline: 3px solid #FFD700; /* Contraste visible */
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 
 <body class="bg-black">
@@ -25,13 +32,13 @@
     </header>
     <nav aria-label="Menu principal"
         class="font-mono bg-zinc-900 text-[10px] sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'présentation'" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'équipe'" href="../page/equipe.html"><b>ÉQUIPE</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'déroulement'" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'manuel'" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'vidéos'" href="../page/video.html"><b>VIDEOS</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'bilan'" href="../page/bilan.html"><b>BILAN</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'plan vert'" href="../page/planVert.html"><b>PLAN VERT</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'présentation'" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'équipe'" href="../page/equipe.html"><b>ÉQUIPE</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'déroulement'" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf" type="application/pdf" target="_blank" aria-label="Manuel au format PDF, s’ouvre dans un nouvel onglet"><b>MANUEL</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'vidéos'" href="../page/video.html"><b>VIDEOS</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'bilan'" href="../page/bilan.html"><b>BILAN</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'plan vert'" href="../page/planVert.html"><b>PLAN VERT</b></a>
     </nav>
     <main role="main">
         <div class="relative w-full">
@@ -46,14 +53,14 @@
     </main>
     <footer role="contentinfo">
         <div class="xl:flex justify-between items-center bg-black text-white py-2 px-5">
-            <p class="font-mono text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl">
+            <aside class="font-mono text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl">
                 Crédits média : 
                 <br/>
                 Dassault Mirage 2000-5F (47/102-EP) - Armée de l'Air<br>
                 © Stéphane Pichard utilisée sous licence 
                 <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
                 Des modifications ont été apportées.
-            </p>
+            </aside>
             <div class="items-center">
                 <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
                     <div class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
@@ -67,7 +74,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>

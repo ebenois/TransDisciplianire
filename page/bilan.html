@@ -12,10 +12,34 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
         rel="stylesheet">
     <title>Présentation | COG'AIR SHOW</title>
+    <style>
+        :focus {
+            outline: 3px solid #FFD700;
+            /* Contraste visible */
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .skip {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip:focus {
+            position: static;
+            width: auto;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body class="bg-zinc-800">
     <header role="banner" class="bg-black">
+        <a href="#main-content" class="skip text-white bg-red-600 rounded-br-lg p-2">Aller au contenu principal</a>
         <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
             <a aria-label="Retour à l'acceuil" class="flex items-center w-fit" href="../index.php">
                 <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
@@ -27,13 +51,21 @@
     </header>
     <nav aria-label="Menu principal"
         class="font-mono bg-zinc-900 text-[10px] sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'présentation'" href="../page/presentation.html"><b>PRÉSENTATION</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'équipe'" href="../page/equipe.html"><b>ÉQUIPE</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'déroulement'" href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'manuel'" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"><b>MANUEL</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'vidéos'" href="../page/video.html"><b>VIDEOS</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'bilan'" href="../page/bilan.html"><b>BILAN</b></a>
-        <a class="hover:text-zinc-400 text-white" aria-label="Aller à la page 'plan vert'" href="../page/planVert.html"><b>PLAN VERT</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'présentation'"
+            href="../page/presentation.html"><b>PRÉSENTATION</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'équipe'"
+            href="../page/equipe.html"><b>ÉQUIPE</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'déroulement'"
+            href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"
+            type="application/pdf" target="_blank"
+            aria-label="Manuel au format PDF, s’ouvre dans un nouvel onglet"><b>MANUEL</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'vidéos'"
+            href="../page/video.html"><b>VIDEOS</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'bilan'"
+            href="../page/bilan.html"><b>BILAN</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'plan vert'"
+            href="../page/planVert.html"><b>PLAN VERT</b></a>
     </nav>
     <main role="main">
         <div class="relative w-full">
@@ -49,31 +81,36 @@
             </div>
         </div>
 
-        <div
+        <section aria-labelledby="titre-bilan"
             class="px-5 xl:px-10 font-mono text-sm sm:text-sm md:text-base lg:text-lg xl:lg:text-xl text-white pt-10 xl:pt-30 pb-10">
-            <p>
+            <p id="main-content">
                 Le projet <span class="font-semibold">COG’AIR SHOW</span> a été une expérience riche et formatrice, tant
                 sur le plan technique que méthodologique.
                 Il nous a permis d’explorer un domaine exigeant — la simulation aéronautique — tout en développant des
                 compétences transversales
                 essentielles à notre future formation d’ingénieur.
             </p>
-
-            <h2 class="underline mt-6">Les objectifs ont été atteints</h2>
+            
+            <section aria-labelledby="objectifs-atteints">
+            <h2 id="objectifs-atteints" class="underline mt-6">Les objectifs ont été atteints</h2>
             <ul class="list-disc ml-6 mt-2">
                 <li>Prise en main du simulateur Mirage 2000 et du logiciel DCS World.</li>
                 <li>Rédaction d’un <strong>manual de pilotage</strong> complet et accessible.</li>
                 <li>Production d’une <strong>vidéo tutorielle</strong> pédagogique.</li>
                 <li>Création d’un site de présentation pour diffuser les livrables.</li>
             </ul>
-
-            <h2 class="underline mt-6">Sur le plan humain</h2>
+            </section>
+            
+            <section aria-labelledby="plan-humain">
+            <h2 id="plan-humain" class="underline mt-6">Sur le plan humain</h2>
             <ul class="list-disc ml-6 mt-2">
                 <li>Travail d’équipe basé sur l'entraide et les compétences individuelles.</li>
                 <li>Gestion de projet sur plusieurs mois avec contraintes et imprévus.</li>
             </ul>
+            </section>
 
-            <h2 class="underline mt-6">Ce que nous retenons</h2>
+            <section aria-labelledby="a-retenir">
+            <h2 id="a-retenir" class="underline mt-6">Ce que nous retenons</h2>
             <ul class="list-disc ml-6 mt-2">
                 <li>Richesse des apprentissages : pilotage, documentation, communication.</li>
                 <li>Importance de la rigueur dans un environnement technique.</li>
@@ -84,11 +121,12 @@
                 En résumé, <span class="italic">COG’AIR SHOW</span> a été un projet stimulant, alliant passion,
                 apprentissage technique et esprit d’équipe.
             </p>
-        </div>
+            </section>
+        </section>
     </main>
     <footer role="contentinfo">
         <div class="xl:flex justify-between items-center bg-black text-white py-2 px-5">
-            <p class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <aside class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
                 Crédits média :
                 <br />
                 Dassault Mirage 2000C - French Air Force - EC 2/5 "Ile-de-France"<br>
@@ -96,7 +134,7 @@
                     Gernez</a> utilisée sous licence
                 <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
                 Des modifications ont été apportées.
-            </p>
+            </aside>
             <div class="items-center">
                 <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
                     <div
@@ -113,9 +151,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
