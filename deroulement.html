@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../image/logoc.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>Déroulement | COG'AIR SHOW</title>
+    <style>
+        :focus {
+            outline: 3px solid #FFD700;
+            /* Contraste visible */
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .skip {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip:focus {
+            position: static;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-800">
+    <header role="banner" class="bg-black">
+        <a href="#main-content" class="skip text-white bg-red-600 rounded-br-lg p-2">Aller au contenu principal</a>
+        <div class=" pl-5 sm:pl-10 md:pl-15 lg:pl-20 xl:pl-25 py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+            <a aria-label="Retour à l'acceuil" class="flex items-center w-fit" href="../index.php">
+                <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                    alt="Logo du projet COG'AIR SHOW">
+                <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                    alt="Titre du projet COG'AIR SHOW">
+            </a>
+        </div>
+    </header>
+    <nav aria-label="Menu principal"
+        class="font-mono bg-zinc-900 text-[10px] sm:text-base md:text-lg lg:text-xl xl:lg:text-2xl flex justify-evenly py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'présentation'"
+            href="../page/presentation.html"><b>PRÉSENTATION</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'équipe'"
+            href="../page/equipe.html"><b>ÉQUIPE</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'déroulement'"
+            href="../page/deroulement.html"><b>DÉROULEMENT</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" href="../fichier/manuel/Manuel MIRAGE 2000 C.pdf"
+            type="application/pdf" target="_blank"
+            aria-label="Manuel au format PDF, s’ouvre dans un nouvel onglet"><b>MANUEL</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'vidéos'"
+            href="../page/video.html"><b>VIDEOS</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'bilan'"
+            href="../page/bilan.html"><b>BILAN</b></a>
+        <a class="hover:text-[#A4A4AD] tracking-wide text-white" aria-label="Aller à la page 'plan vert'"
+            href="../page/planVert.html"><b>PLAN VERT</b></a>
+    </nav>
+    <main role="main">
+        <div class="relative w-full">
+            <img class="w-full h-auto" alt="Photo de l’escadron de chasse 2/5 Île-de-France"
+                src="../image/deroulement.png">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                    <h1
+                        class="font-mono uppercase text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-nowrap text-white">
+                        <b>Déroulement du projet</b>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <section aria-labelledby="titre-deroulement"
+            class="px-5 xl:px-10 font-mono text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white pt-10 xl:pt-30 pb-10">
+            <p id="main-content">Le projet <span class="font-semibold">COG’AIR SHOW</span> s’est déroulé sur toute la
+                première année,
+                selon une progression structurée en plusieurs étapes clés, de l’appropriation du sujet jusqu’à la
+                production des livrables finaux.
+            </p>
+
+            <section aria-labelledby="prise-en-main">
+            <h2 id="prise-en-main" class="underline mt-6">1. Prise en main du sujet</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Analyse de la documentation existante et définition des objectifs.</li>
+                <li>Découverte du simulateur Mirage 2000 et du logiciel DCS World.</li>
+                <li>Réunions avec le tuteur pour cadrer les attentes.</li>
+            </ul>
+            </section>
+
+            <section aria-labelledby="repartition-role">
+            <h2 id="repartition-role" class="underline mt-6">2. Répartition des rôles et organisation interne</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Constitution d’un planning de travail et d’une matrice d’implication.</li>
+                <li>Répartition des tâches entre les membres selon leurs compétences et préférences.</li>
+                <li>Suivi régulier à travers des points hebdomadaires.</li>
+            </ul>
+            </section>
+
+            <section aria-labelledby="apprentissage-tests">
+            <h2 id="apprentissage-tests" class="underline mt-6">3. Phase d’apprentissage et de test</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Formation à l’utilisation du simulateur et tests de fonctionnalités.</li>
+                <li>Recueil des retours auprès d’étudiants experts pour améliorer la compréhension technique.</li>
+                <li>Repérage et documentation des procédures critiques (démarrage, vol, navigation…).</li>
+            </ul>
+            </section>
+
+            <section aria-labelledby="livrables">
+            <h2 id="livrables" class="underline mt-6">4. Production des livrables</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Rédaction du <span class="font-semibold">manuel de pilotage</span>, structuré et illustré.</li>
+                <li>Réalisation de <span class="font-semibold">démonstrations enregistrées</span> montrant des phases du pilotage du Mirage 2000 C.
+                </li>
+                <li>Mise en ligne des livrables et préparation du site web de présentation.</li>
+            </ul>
+            </section>
+
+            <section aria-labelledby="conception-communication">
+            <h2 id="conception-communication" class="underline mt-6">5. Outils de conception et de communication</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li><span class="font-semibold">Outils de conception</span> : DCS, Canva, DaVinci Resolve.</li>
+                <li><span class="font-semibold">Outils de communication</span> : Gmail, Google Drive, WhatsApp.</li>
+            </ul>
+            </section>
+
+            <section aria-labelledby="soutenance">
+            <h2 id="soutenance" class="underline mt-6">6. Préparation de la soutenance</h2>
+            <ul class="list-disc ml-6 mt-2">
+                <li>Réalisation du diaporama de présentation.</li>
+                <li>Répétitions de l’oral pour assurer clarté et fluidité.</li>
+                <li>Finalisation du site web et relecture complète de tous les contenus.</li>
+            </ul>
+
+            <p class="mt-6">Ce déroulement a permis une montée en compétences progressive, un respect des délais, et une
+                cohérence dans la production finale.</p>
+            </section>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="xl:flex justify-between items-center bg-black text-white py-2 px-5">
+            <aside class="font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                Crédits média :
+                <br />
+                Photo de l’escadron de chasse 2/5 Île-de-France<br>
+                © Christophe Agostinis utilisée sous licence
+                <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0</a><br>
+                Des modifications ont été apportées.
+            </aside>
+            <div class="items-center">
+                <div class="text-white bg-black py-1 sm:py-1 md:py-2 lg:py-3 xl:py-4">
+                    <div
+                        class="flex items-center justify-end pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        <img src="../image/logon.png" class="h-7 sm:h-8 md:h-10 lg:h-14 xl:h-18"
+                            alt="Logo du projet COG'AIR SHOW">
+                        <img src="../image/titre.png" class="pl-2 h-4 sm:h-5 md:h-6 lg:h-7 xl:h-8"
+                            alt="Titre du projet COG'AIR SHOW">
+                    </div>
+                    <p
+                        class="font-mono text-xs sm:text-sm md:text-bse lg:text-lg xl:lg:text-xl text-white text-right pr-5 sm:pr-10 md:pr-15 lg:pr-20 xl:pr-25  pb-1 sm:pb-1 md:py-2 lg:pb-3 xl:pb-4">
+                        © 2025 COG'AIR SHOW – Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
